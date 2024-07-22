@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            <button onclick="window.location.href='home.html';" id="homeBtn">Home</button>
+        </div>
+      </header>
+    <header>
+        <h1>Doctor Appointment System</h1>
+    </header>
+    <main>
+        <section id="appointment-form">
+            <h2>Schedule an Appointment</h2>
+            <form  method="POST" id="appointmentForm" action="save_appointment.php">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="doctor">Select Doctor:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="">Choose a doctor</option>
+                    <option value="Dr. Saad Ahmed">Dr. Saad Ahmed</option>
+                    <option value="Dr. Rida">Dr. Rida</option>
+                    <option value="Dr. Zainab">Dr. Zainab</option>
+                    <option value="Dr. Fatima Sherazi">Dr. Fatima Sherazi</option>
+                    <option value="Dr. Abdullah">Dr. Abdullah</option>
+                    <option value="Dr. Ali">Dr. Ali</option>
+                    <!-- Add more doctor options here -->
+                </select>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <input type="submit" value="Schedule Appointment">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 AppointmentsOnSingleClick. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+   
+
+</body>
+</html>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    
+    header {
+        background-color: #3498db;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    main {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    #appointment-form {
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+        margin: 0;
+    }
+    
+    h2 {
+        margin-top: 0;
+    }
+    
+    form {
+        display: grid;
+        grid-gap: 10px;
+    }
+    
+    label {
+        display: block;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    input[type="date"],
+    input[type="time"],
+    input[type="submit"],
+    select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    input[type="submit"] {
+        background-color: #3498db;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #2980b9;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+    .topbar {
+        display: flex;
+        justify-content: flex-start;
+      }
+      
+      .topbar button {
+        background-color: #ddd;
+        border: none;
+        cursor: pointer;
+        padding: 8px 20px;
+        margin-right: 20px;
+        font-family: inherit;
+        font-size: 14px;
+        border-radius: 5px;
+      }
+</style>

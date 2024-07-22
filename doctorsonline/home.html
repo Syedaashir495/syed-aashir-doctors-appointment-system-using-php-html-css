@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+          background-image: url("background.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          
+        }
+      
+         
+      
+        
+        
+
+        
+        
+
+      </style>
+      
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="sidebar">
+      <button id="appointmentBtn">Book Your Appointment</button>
+      <button id="doctorsBtn">Available Doctors</button>
+      <button id="helpBtn">Help</button>
+    </div>
+    <div class="content">
+      <h1>  Welcome to Doctors Online</h1>
+      <p>Doctors Online is a user-friendly website where you can easily book medical appointments from home and check doctor availability in real-time. Experience convenient healthcare access at your fingertips.</p>
+      <p>Here you can find information about our services, book appointments with our doctors, and get the help you need.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2023 AppointmentsOnSingleClick. All rights reserved.</p>
+</footer>
+</body>
+</html>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      .sidebar {
+        width: 200px;
+        background-color: #f0f0f0;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      
+      .sidebar button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #ddd;
+        border: none;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+       
+
+
+      .sidebar button:hover {
+        background-color: #ccc;
+      }
+      
+      .content {
+        margin-left: 40px;
+      }
+      
+      h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+      
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+</style>
+<script>
+    document.getElementById("appointmentBtn").addEventListener("click", function() {
+        window.location.href = "bookAppointment.html";
+      });
+      
+      document.getElementById("doctorsBtn").addEventListener("click", function() {
+        window.location.href = "doctors.html";
+      });
+      
+      document.getElementById("helpBtn").addEventListener("click", function() {
+        window.location.href = "help.html";
+      });
+      
+</script>
